@@ -10,7 +10,7 @@ import registerMiddleware from '#app/middleware/index.js'
 const app = express();
 
 app.use(cors({
-	origin: [ CLIENT_HOST ]
+	origin: '*'
 }));
 
 const server = app.listen(PORT, () => {
